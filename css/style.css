@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	    background-color: red;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: grey;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*********** Splash Page ************************/
+header {
+font-family: 'Roboto', sans-serif;
+color: #000000;
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+color: #000000;
+}
+
+header img {
+  border: 5px solid #555;
+}
+
+.address {
+ color: red;
+}
+
+.tagline {
+  color: red;
+}
+
+/************* Sections ********************/
+hr {
+display: grid;
+background-color: red;
+}
+
+section h3 {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: red;
+}
+
+section dl {
+  display: grid;
+  background-color: red;
+}
+
+section ul {
+display: grid;
+background-color: red;
+}
+
+section a {
+display: grid;
+background-color: red;
+color: red;
+text-decoration: none;
+}
+
+section a:hover {
+  display: grid;
+  background-color: red;
+  color: blue;
+  text-decoration: none;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card {
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  background-color: white;
+  padding: 50px;
+  margin: 50px 0;
+  border: 1px solid black;
+  overflow: hidden;
+  gap: 20px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+
+}
+
+textarea {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 15px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-size: 16px;
+   font-family: inherit;
+   min-height: 120px;
+   resize: vertical;
+   box-sizing: border-box;
+}
